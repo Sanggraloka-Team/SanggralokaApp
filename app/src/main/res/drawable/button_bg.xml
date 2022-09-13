@@ -4,4 +4,7 @@
 
     <solid android:color="@color/lilac" />
     <corners android:radius="10dp" />
+    <size
+        android:width="105dp"
+        android:height="44dp" />
 </shape>

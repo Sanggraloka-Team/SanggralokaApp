@@ -8,17 +8,20 @@
     tools:context=".LogInActivity">
 
     <ImageView
+        android:id="@+id/logo_sanggraloka_log_in"
         android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_above="@id/boxLogIn"
-        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/sanggraloka" />
 
     <LinearLayout
         android:id="@+id/boxLogIn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_below="@+id/logo_sanggraloka_log_in"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_bg"
         android:orientation="vertical"
         android:paddingHorizontal="20dp"
@@ -28,7 +31,7 @@
             android:id="@+id/txtLogIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="30dp"
             android:text="Log In"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -39,42 +42,61 @@
             android:id="@+id/txtInputUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/input_bg"
             android:hint="Username"
             android:paddingVertical="8dp"
-            android:paddingLeft="15dp" />
+            android:paddingStart="15dp"
+            android:textColorHint="#A48989" />
 
         <EditText
             android:id="@+id/txtInputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/input_bg"
             android:hint="Password"
             android:paddingVertical="8dp"
-            android:paddingLeft="15dp" />
+            android:paddingStart="15dp"
+            android:textColorHint="#A48989" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogIn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/button_bg"
-            android:hint="Log In"
-            android:textColorHint="@color/white" />
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtLogInHelp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Lupa detail login Anda?"
+            android:text="Lupa detail login Anda?"
             android:textAlignment="center"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/txtTidakPunyaAkun"
+        android:background="@color/white" />
 
+    <TextView
+        android:id="@+id/txtTidakPunyaAkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Tidak punya akun? Buat Akun."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 </RelativeLayout>
