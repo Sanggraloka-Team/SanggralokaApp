@@ -19,9 +19,10 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="#ffffff"
+        android:background="@drawable/rounded_bg"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
 
         <TextView
             android:id="@+id/txtSignUp"
@@ -38,29 +39,39 @@
             android:id="@+id/txtInputUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:hint="Username" />
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_bg"
+            android:hint="Username"
+            android:paddingVertical="8dp"
+            android:paddingLeft="15dp" />
 
         <EditText
             android:id="@+id/txtInputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:hint="Password" />
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_bg"
+            android:hint="Password"
+            android:paddingVertical="8dp"
+            android:paddingLeft="15dp" />
 
         <EditText
             android:id="@+id/txtInputConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:hint="Confirm Password" />
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_bg"
+            android:hint="Confirm Password"
+            android:paddingVertical="8dp"
+            android:paddingLeft="15dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="5dp"
+            android:background="@drawable/button_bg"
             android:hint="Sign Up"
             android:textColorHint="@color/white" />
 
