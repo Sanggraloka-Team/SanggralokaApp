@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:background="@color/lilac">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@id/boxLogIn"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sanggraloka" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:id="@+id/boxLogIn"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/txtLogIn"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:id="@+id/txtInputUsername"
+            android:layout_marginBottom="40dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/txtInputPassword"
+            android:layout_marginBottom="40dp"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Log In"
+            android:textColorHint="@color/white"
+            android:id="@+id/btnLogIn"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lupa detail login Anda?"
+            android:id="@+id/txtLogInHelp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginBottom="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
