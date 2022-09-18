@@ -14,7 +14,13 @@
         android:theme="@style/Theme.Sanggraloka"
         tools:targetApi="31">
         <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".PengaturanActivity"
@@ -23,7 +29,7 @@
             android:name=".EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".LogInActivity"
+            android:name=".SlashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
