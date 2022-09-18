@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boxProfile1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -11,34 +12,46 @@
     tools:context=".ProfileActivity">
 
     <LinearLayout
+        android:id="@+id/boxProfile2"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="#F9EEFC"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/profile_box2_bg"
         android:orientation="horizontal"
         android:paddingHorizontal="20dp">
 
         <ImageView
+            android:id="@+id/imgProfile"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:contentDescription="Foto profile pengguna"
             android:src="@drawable/sample" />
 
         <LinearLayout
+            android:id="@+id/boxProfile3"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@color/grey"
+            android:background="@drawable/profile_box3_bg"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingHorizontal="15dp">
 
             <TextView
+                android:id="@+id/txtNamaPengguna"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hi, David!" />
+                android:layout_marginBottom="8dp"
+                android:text="Hi, David!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEditProfile"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/button_edit_profile_bg"
                 android:text="Edit Profile"
                 android:textAllCaps="false" />
         </LinearLayout>
@@ -46,27 +59,32 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPengaturan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/grey"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_profile_bg"
         android:drawableStart="@drawable/setting_icon"
         android:drawablePadding="30dp"
-        android:gravity="left|center_vertical"
+        android:gravity="start|center_vertical"
         android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
         android:text="Pengaturan"
         android:textAllCaps="false"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/grey"
+        android:background="@drawable/button_profile_bg"
         android:drawableStart="@drawable/logout_icon"
         android:drawablePadding="30dp"
-        android:gravity="left|center_vertical"
+        android:gravity="start|center_vertical"
         android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
         android:text="Keluar"
         android:textAllCaps="false"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
 </LinearLayout>
