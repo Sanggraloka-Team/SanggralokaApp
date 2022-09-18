@@ -36,7 +36,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="86dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/grey_line"
+        android:backgroundTint="@color/grey"
         android:gravity="center"
         android:hint="Hi, Nama Anda!"
         android:paddingVertical="6pt"
@@ -52,7 +52,7 @@
         android:textSize="10sp"
         android:textAlignment="center"
         android:paddingTop="5dp"
-        android:textColor="@color/grey_txt"/>
+        android:textColor="@color/grey"/>
     <TextView
         android:id="@+id/txtdua"
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
         android:text="anda akan muncul di Sanggraloka."
         android:textSize="10sp"
         android:textAlignment="center"
-        android:textColor="@color/grey_txt"/>
+        android:textColor="@color/grey"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSimpan"
