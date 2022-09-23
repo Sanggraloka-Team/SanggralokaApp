@@ -5,77 +5,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="30dp"
     tools:context=".PengaturanActivity">
 
     <TextView
         android:id="@+id/textview_pengaturan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
+        android:layout_marginBottom="30dp"
         android:text="Pengaturan"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edittext_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_pengaturan_bg"
         android:hint="Email"
-        android:textColorHint="@color/black" />
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/grey" />
+
 
     <EditText
         android:id="@+id/edittext_ubah_kata_sandi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_pengaturan_bg"
         android:hint="Ubah kata sandi"
-        android:textColorHint="@color/black" />
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/grey"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edittext_nomor_ponsel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_pengaturan_bg"
         android:hint="Nomor ponsel"
-        android:textColorHint="@color/black" />
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/grey"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edittext_jenis_kelamin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_pengaturan_bg"
         android:hint="Jenis kelamin"
-        android:textColorHint="@color/black" />
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/grey"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edittext_tanggal_lahir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_pengaturan_bg"
         android:hint="Tanggal lahir"
-        android:textColorHint="@color/black" />
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/grey"
+        android:importantForAutofill="no" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_simpan_pengaturan"
-        android:layout_width="110dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="155dp"
-        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_bg"
-        android:gravity="center"
         android:text="Simpan"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="20sp" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="halo">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>

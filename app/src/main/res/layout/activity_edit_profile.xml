@@ -13,6 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
         android:layout_marginBottom="15dp"
+        android:contentDescription="foto profil"
         android:src="@drawable/profil" />
 
     <TextView
@@ -38,6 +39,8 @@
         android:backgroundTint="@color/grey"
         android:gravity="center"
         android:hint="Hi, Nama Anda!"
+        android:importantForAutofill="no"
+        android:inputType="text"
         android:paddingVertical="6pt"
         android:textColor="@color/grey"
         android:textStyle="bold" />
@@ -51,7 +54,7 @@
         android:text="Ini dapat menjadi nama depan atau nama panggilan. Ini adalah bagaimana"
         android:textAlignment="center"
         android:textColor="@color/grey"
-        android:textSize="10sp" />
+        android:textSize="11sp" />
 
     <TextView
         android:id="@+id/textview_dua"
@@ -61,7 +64,7 @@
         android:text="anda akan muncul di Sanggraloka."
         android:textAlignment="center"
         android:textColor="@color/grey"
-        android:textSize="10sp" />
+        android:textSize="11sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_simpan"
