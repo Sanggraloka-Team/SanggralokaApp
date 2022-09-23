@@ -8,7 +8,7 @@
     tools:context=".LogInActivity">
 
     <ImageView
-        android:id="@+id/logo_sanggraloka_log_in"
+        android:id="@+id/imageview_logo"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -17,10 +17,10 @@
         android:src="@drawable/sanggraloka" />
 
     <LinearLayout
-        android:id="@+id/boxLogIn"
+        android:id="@+id/box_log_in"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo_sanggraloka_log_in"
+        android:layout_below="@+id/imageview_logo"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_bg"
         android:orientation="vertical"
@@ -28,7 +28,7 @@
         android:paddingVertical="10dp">
 
         <TextView
-            android:id="@+id/txtLogIn"
+            android:id="@+id/textview_log_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -39,7 +39,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txtInputUsername"
+            android:id="@+id/edittext_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -50,18 +50,19 @@
             android:textColorHint="#A48989" />
 
         <EditText
-            android:id="@+id/txtInputPassword"
+            android:id="@+id/edittext_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/input_bg"
             android:hint="Password"
+            android:inputType="textPassword"
             android:paddingVertical="8dp"
             android:paddingStart="15dp"
             android:textColorHint="#A48989" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogIn"
+            android:id="@+id/button_log_in"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -73,7 +74,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txtLogInHelp"
+            android:id="@+id/textview_log_in_help"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -87,11 +88,11 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_above="@+id/txtTidakPunyaAkun"
+        android:layout_above="@+id/textview_tidak_punya_akun"
         android:background="@color/white" />
 
     <TextView
-        android:id="@+id/txtTidakPunyaAkun"
+        android:id="@+id/textview_tidak_punya_akun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -10,7 +10,7 @@
     tools:context=".SlashActivity">
 
     <ImageView
-        android:id="@+id/logo_add"
+        android:id="@+id/imageview_logo"
         android:layout_width="350dp"
         android:layout_height="350dp"
         android:layout_alignParentStart="true"

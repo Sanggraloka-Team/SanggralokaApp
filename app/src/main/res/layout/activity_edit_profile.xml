@@ -7,7 +7,7 @@
     tools:context=".EditProfileActivity">
 
     <ImageView
-        android:id="@+id/photo_edit_profile"
+        android:id="@+id/imageview_edit_profil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -16,10 +16,10 @@
         android:src="@drawable/profil" />
 
     <TextView
-        android:id="@+id/ubahFoto"
+        android:id="@+id/textview_ubah_foto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/photo_edit_profile"
+        android:layout_below="@id/imageview_edit_profil"
         android:text="Ubah foto"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -27,10 +27,10 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txtNamaAnda"
+        android:id="@+id/edittext_nama_anda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ubahFoto"
+        android:layout_below="@id/textview_ubah_foto"
         android:layout_centerInParent="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="86dp"
@@ -43,30 +43,31 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/txtsatu"
+        android:id="@+id/textview_satu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtNamaAnda"
-        android:text="Ini dapat menjadi nama depan atau nama panggilan. Ini adalah bagaimana"
-        android:textSize="10sp"
-        android:textAlignment="center"
+        android:layout_below="@id/edittext_nama_anda"
         android:paddingTop="5dp"
-        android:textColor="@color/grey"/>
+        android:text="Ini dapat menjadi nama depan atau nama panggilan. Ini adalah bagaimana"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="10sp" />
+
     <TextView
-        android:id="@+id/txtdua"
+        android:id="@+id/textview_dua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtsatu"
+        android:layout_below="@id/textview_satu"
         android:text="anda akan muncul di Sanggraloka."
-        android:textSize="10sp"
         android:textAlignment="center"
-        android:textColor="@color/grey"/>
+        android:textColor="@color/grey"
+        android:textSize="10sp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSimpan"
+        android:id="@+id/button_simpan"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtdua"
+        android:layout_below="@id/textview_dua"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="155dp"
         android:background="@drawable/button_bg"
