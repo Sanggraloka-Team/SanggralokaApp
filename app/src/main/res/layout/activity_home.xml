@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/kawahputih"
+        android:src="@drawable/img_kawahputih"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         />
@@ -49,7 +49,7 @@
             <ImageView
                 android:layout_width="82dp"
                 android:layout_height="95dp"
-                android:src="@drawable/sample"
+                android:src="@drawable/img_sample"
                 android:layout_marginBottom="10dp"
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp"/>
@@ -76,7 +76,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:src="@drawable/cimory_land" />
+                android:src="@drawable/img_cimory_land" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -100,7 +100,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:src="@drawable/orchid_forest_cikole" />
+                android:src="@drawable/img_orchid_forest_cikole" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -148,7 +148,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:src="@drawable/dapoer_pandan_wangi"
+                android:src="@drawable/img_dapoer_pandan_wangi"
                 android:layout_marginBottom="10dp"
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp"/>
@@ -183,7 +183,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:src="@drawable/burgereens" />
+                android:src="@drawable/img_burgereens" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -207,7 +207,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:src="@drawable/sapulidi" />
+                android:src="@drawable/img_sapulidi" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -246,7 +246,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:src="@drawable/jalan_dago"
+                android:src="@drawable/img_jalan_dago"
                 android:layout_marginBottom="10dp"
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp"/>
@@ -273,7 +273,7 @@
             <ImageView
                 android:layout_width="82dp"
                 android:layout_height="95dp"
-                android:src="@drawable/sample"
+                android:src="@drawable/img_sample"
                 android:layout_marginBottom="10dp"
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp" />
@@ -300,7 +300,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:src="@drawable/the_secret" />
+                android:src="@drawable/img_the_secret" />
 
             <TextView
                 android:layout_width="match_parent"
