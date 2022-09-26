@@ -14,7 +14,7 @@
         android:layout_marginTop="65dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="foto profil"
-        android:src="@drawable/profil" />
+        android:src="@drawable/img_profil" />
 
     <TextView
         android:id="@+id/textview_ubah_foto"
@@ -73,7 +73,7 @@
         android:layout_below="@id/textview_dua"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="155dp"
-        android:background="@drawable/button_bg"
+        android:background="@drawable/custom_button_bg"
         android:gravity="center"
         android:text="Simpan"
         android:textAllCaps="false"

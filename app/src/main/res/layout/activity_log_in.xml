@@ -15,7 +15,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:contentDescription="sanggraloka logo"
-        android:src="@drawable/sanggraloka" />
+        android:src="@drawable/img_sanggraloka" />
 
     <LinearLayout
         android:id="@+id/box_log_in"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageview_logo"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded_bg"
+        android:background="@drawable/custom_rounded_bg"
         android:orientation="vertical"
         android:paddingHorizontal="20dp"
         android:paddingVertical="10dp">
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/input_bg"
+            android:background="@drawable/custom_input_bg"
             android:hint="Username"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/input_bg"
+            android:background="@drawable/custom_input_bg"
             android:hint="Password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/button_bg"
+            android:background="@drawable/custom_button_bg"
             android:text="Log In"
             android:textAllCaps="false"
             android:textColor="@color/white"

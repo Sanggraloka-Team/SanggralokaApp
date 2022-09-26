@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview_gambar_tempat_wisata"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:contentDescription="gambar tempat wisata"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_floating_market" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_nama_tempat_wisata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Floating Market"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button_add_bookmark"
+                        style="@style/Widget.MaterialComponents.Button.Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="bookmark icon"
+                        app:icon="@drawable/ic_outline_bookmark_add_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_alamat_tempat_wisata"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:text="Jl. Grand Hotel No.33E, Lembang, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D9D9D9" />
+
+                <TextView
+                    android:id="@+id/textview_heading_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"
+                    android:text="Deskripsi"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_isi_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:text="Tingkatkan pengalaman berbelanja Anda di Floating Market Lembang di mana Anda dapat berbelanja di atas air. Rasakan sensasi unik berbelanja barang-barang seperti makanan lokal di atas perahu yang mengapung di sepanjang danau yang indah menggunakan koin Pasar Terapung yang dibuat khusus untuk pembelian Anda. Selain berbelanja, Floating Market juga menawarkan aktivitas seru lainnya yang bisa dicoba segala usia. \n\nMulai dari batagor, rujak, hingga ronde jahe dan kebab, Anda bisa menemukan berbagai suguhan lezat untuk memuaskan selera Anda. Jelajahi atraksi lain di sekitar pasar, seperti wahana air di danau dan Taman Pelangi dengan spot foto outdoor yang indah. Lebih baik lagi, sewa kostum Kyotoku, lalu berjalan-jalan dengan kimono ini bersama orang yang Anda cintai dan rasakan seolah-olah Anda berada di taman Jepang."
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textview_heading_fasilitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"
+                    android:text="Fasilitas"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="60dp"
+                    app:chipSpacingHorizontal="10dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:clickable="false"
+                        android:elevation="2dp"
+                        android:text="Toilet"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="@color/lilac" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:clickable="false"
+                        android:elevation="2dp"
+                        android:text="Praying Room"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="@color/lilac" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:clickable="false"
+                        android:elevation="2dp"
+                        android:text="ATM"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="@color/lilac" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:clickable="false"
+                        android:elevation="2dp"
+                        android:text="Restaurant"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="@color/lilac" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:clickable="false"
+                        android:elevation="2dp"
+                        android:text="Changing Room"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="@color/lilac" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:clickable="false"
+                        android:elevation="2dp"
+                        android:text="Parking Room"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="@color/lilac" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_buka_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/sapphire_blue"
+        android:contentDescription="button to maps"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_outline_map_28"
+        app:tint="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
