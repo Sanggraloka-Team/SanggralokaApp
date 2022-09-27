@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingHorizontal="15dp"
+                android:paddingHorizontal="20dp"
                 android:paddingVertical="10dp">
 
                 <LinearLayout
@@ -185,7 +185,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/lilac"
+        android:backgroundTint="@color/sapphire_blue"
         android:contentDescription="button to maps"
         app:elevation="10dp"
         app:fabSize="normal"

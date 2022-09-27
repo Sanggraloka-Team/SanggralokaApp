@@ -15,11 +15,7 @@
         tools:targetApi="31">
         <activity
             android:name=".DetailActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".LogInActivity"
             android:exported="false" />
@@ -34,6 +30,9 @@
             android:exported="false" />
         <activity
             android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".SlashActivity"
