@@ -57,7 +57,7 @@
                         android:layout_marginStart="5dp"
                         android:backgroundTint="@color/white"
                         android:contentDescription="bookmark icon"
-                        app:icon="@drawable/ic_outline_bookmark_add_24" />
+                        app:icon="@drawable/ic_baseline_bookmark_border_24" />
                 </LinearLayout>
 
                 <TextView

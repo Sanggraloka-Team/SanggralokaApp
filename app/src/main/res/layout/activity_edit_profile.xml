@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="30dp"
     tools:context=".EditProfileActivity">
 
     <ImageView
@@ -11,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp"
         android:contentDescription="foto profil"
         android:src="@drawable/img_profil" />
@@ -51,26 +53,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/edittext_nama_anda"
         android:paddingTop="5dp"
-        android:text="Ini dapat menjadi nama depan atau nama panggilan. Ini adalah bagaimana"
+        android:text="Ini dapat menjadi nama depan atau nama panggilan. Ini adalah bagaimana anda akan muncul di Sanggraloka."
         android:textAlignment="center"
         android:textColor="@color/grey"
         android:textSize="11sp" />
 
-    <TextView
-        android:id="@+id/textview_dua"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textview_satu"
-        android:text="anda akan muncul di Sanggraloka."
-        android:textAlignment="center"
-        android:textColor="@color/grey"
-        android:textSize="11sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_simpan"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textview_dua"
+        android:layout_below="@id/textview_satu"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="155dp"
         android:background="@drawable/custom_button_bg"
