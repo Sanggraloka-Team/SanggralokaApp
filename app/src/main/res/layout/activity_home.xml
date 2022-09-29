@@ -1,368 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:paddingHorizontal="20dp"
-    android:paddingVertical="20dp"
     tools:context=".HomeActivity">
 
-    <ImageView
-        android:id="@+id/imageview_banner"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:contentDescription="gambar banner"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img_kawahputih"
-        tools:ignore="ImageContrastCheck" />
+        android:layout_height="match_parent">
 
-    <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="65dp">
+
+            <ImageView
+                android:id="@+id/imageview_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="gambar banner"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_kawahputih"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cobain wisata terpopuler di Bandung"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentStart="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto floating market"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_floating_market" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Floating Market"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto cimory land"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_cimory_land" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Cimory Land"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto Orchid Forest Cikole"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_orchid_forest_cikole" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Orchid Forest Cikole"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kulineran di Bandung"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentStart="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto Dapoer Pandan Wangi"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_dapoer_pandan_wangi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Dapoer Pandan Wangi"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto Burgreens"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_burgereens" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Burgreens"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto Sapulidi"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_sapulidi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Sapulidi"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pusat perbelanjaan yang wajib dikunjungi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentStart="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto Jalan Dago"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_jalan_dago" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Jalan Dago"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto Paris Van Java"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_paris_van_java_mall" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Paris Van Java"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardBackgroundColor="@color/lilac">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:contentDescription="Foto The Secret"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/img_the_secret" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="The Secret"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Cobain wisata terpopuler di Bandung"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_alignParentStart="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto floating market"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_floating_market" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Floating Market"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_centerInParent="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto cimory land"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_cimory_land" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Cimory Land"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_alignParentEnd="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto Orchid Forest Cikole"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_orchid_forest_cikole" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Orchid Forest Cikole"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Kulineran di Bandung"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_alignParentStart="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto Dapoer Pandan Wangi"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_dapoer_pandan_wangi" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Dapoer Pandan Wangi"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_centerInParent="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto Burgreens"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_burgereens" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Burgreens"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_alignParentEnd="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto Sapulidi"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_sapulidi" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Sapulidi"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Pusat perbelanjaan yang wajib dikunjungi"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_alignParentStart="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto Jalan Dago"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_jalan_dago" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Jalan Dago"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_centerInParent="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto Paris Van Java"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_paris_van_java_mall" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="Paris Van Java"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_alignParentEnd="true"
-            app:cardBackgroundColor="@color/lilac">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:contentDescription="Foto The Secret"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img_the_secret" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="10dp"
-                    android:text="The Secret"
-                    android:textColor="@color/black"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-    </RelativeLayout>
-
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@color/lilac"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>
 
