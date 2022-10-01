@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sanggraloka.iml" filepath="$PROJECT_DIR$/.idea/modules/Sanggraloka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Sanggraloka.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
