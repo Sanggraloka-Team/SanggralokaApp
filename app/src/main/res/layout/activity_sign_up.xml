@@ -46,11 +46,12 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/custom_input_bg"
             android:hint="Username"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress"
+            android:minHeight="48dp"
             android:paddingHorizontal="15dp"
             android:paddingVertical="8dp"
-            android:textColorHint="#A48989"
-            android:importantForAutofill="no" />
+            android:textColorHint="#A48989" />
 
         <EditText
             android:id="@+id/edittext_password"
@@ -59,11 +60,12 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/custom_input_bg"
             android:hint="Password"
+            android:importantForAutofill="no"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:paddingHorizontal="15dp"
             android:paddingVertical="8dp"
-            android:textColorHint="#A48989"
-            android:importantForAutofill="no" />
+            android:textColorHint="#A48989" />
 
         <EditText
             android:id="@+id/edittext_confirm_password"
@@ -72,11 +74,12 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/custom_input_bg"
             android:hint="Confirm Password"
+            android:importantForAutofill="no"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:paddingHorizontal="15dp"
             android:paddingVertical="8dp"
-            android:textColorHint="#A48989"
-            android:importantForAutofill="no" />
+            android:textColorHint="#A48989" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_sign_up"

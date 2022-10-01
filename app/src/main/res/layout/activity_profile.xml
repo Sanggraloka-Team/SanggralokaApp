@@ -57,12 +57,13 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_edit_profil"
                     android:layout_width="wrap_content"
-                    android:paddingHorizontal="25dp"
-                    android:layout_height="30dp"
+                    android:layout_height="48dp"
                     android:background="@drawable/custom_button_edit_profile_bg"
+                    android:paddingHorizontal="25dp"
                     android:text="Edit Profile"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
