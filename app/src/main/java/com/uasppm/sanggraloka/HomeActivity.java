@@ -27,6 +27,14 @@ public class HomeActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.home_activity_page:
                         return true;
+                    case R.id.search_activity_page:
+                        startActivity(new Intent(getApplicationContext(), SearchActivity.class));
+                        overridePendingTransition(0, 0);
+                        return true;
+                    case R.id.save_activity_page:
+                        startActivity(new Intent(getApplicationContext(), SavedActivity.class));
+                        overridePendingTransition(0, 0);
+                        return true;
                     case R.id.profil_activity_page:
                         startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
                         overridePendingTransition(0, 0);
