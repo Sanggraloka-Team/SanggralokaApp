@@ -20,7 +20,7 @@ public class SearchActivity extends AppCompatActivity {
 
         bottomNavigationView.setSelectedItemId(R.id.profil_activity_page);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
