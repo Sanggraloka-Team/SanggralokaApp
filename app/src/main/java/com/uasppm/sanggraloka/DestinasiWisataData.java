@@ -121,7 +121,7 @@ public class DestinasiWisataData {
             R.drawable.img_paris_van_java_mall,
             R.drawable.img_the_secret,
             R.drawable.img_tebing_keraton,
-            R.drawable.img_floating_market,
+            R.drawable.img_sanghyang_heuleut,
             R.drawable.img_situ_patenggang,
             R.drawable.img_curug_maribaya,
             R.drawable.img_the_great_asia_africa,
