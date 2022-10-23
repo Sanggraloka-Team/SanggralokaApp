@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/drawable/button_bg.xml" value="0.162" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/drawable/button_color_bg.xml" value="0.162" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/drawable/input_bg.xml" value="0.162" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/drawable/rounded_bg.xml" value="0.162" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/drawable/txt_buat_akun_bg.xml" value="0.162" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/layout/activity_log_in.xml" value="0.192481884057971" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/layout/activity_main.xml" value="0.20260416666666667" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
-        <entry key="..\:/Users/Acer/Desktop/UAS-PPM/ppm/SanggralokaApp/app/src/main/res/layout/activity_slash.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/drawable/custom_button_profile_bg.xml" value="0.1665" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/drawable/custom_profile_box3_bg.xml" value="0.1665" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/drawable/ic_outline_map_28.xml" value="0.1665" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/drawable/ic_sharp_search_24.xml" value="0.1665" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/drawable/rounded_bg.xml" value="0.1655" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_detail.xml" value="0.16077898550724637" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_log_in.xml" value="0.21" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_main.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_pengaturan.xml" value="0.22" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_sign_up.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/X230/Desktop/UAS-PPM/UAS_PPM/SanggralokaApp/app/src/main/res/layout/activity_slash.xml" value="0.20018115942028986" />
       </map>
     </option>
   </component>
