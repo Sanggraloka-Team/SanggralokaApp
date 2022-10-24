@@ -1,0 +1,57 @@
+package com.uasppm.sanggraloka;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
+import java.util.ArrayList;
+
+public class CardViewDestinasiWisataAdapter extends RecyclerView.Adapter<CardViewDestinasiWisataAdapter.CardViewViewHolder> {
+
+    private ArrayList<DestinasiWisata> listDestinasiWisata;
+
+    CardViewDestinasiWisataAdapter(ArrayList<DestinasiWisata> list) {
+        this.listDestinasiWisata = list;
+    }
+
+    @NonNull
+    @Override
+    public CardViewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_destinasi_wisata, parent, false);
+        return new CardViewViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull final CardViewViewHolder holder, int position) {
+        DestinasiWisata destinasiWisata = listDestinasiWisata.get(position);
+
+        Glide.with(holder.itemView.getContext()).load(destinasiWisata.getGambar()).apply(new RequestOptions().override(115)).into(holder.gambarDestinasiWisata);
+
+        holder.tvNama.setText(destinasiWisata.getNama());
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return listDestinasiWisata.size();
+    }
+
+    class CardViewViewHolder extends RecyclerView.ViewHolder {
+        ImageView gambarDestinasiWisata;
+        TextView tvNama;
+
+        CardViewViewHolder(View itemView) {
+            super(itemView);
+            gambarDestinasiWisata = itemView.findViewById(R.id.imageview_destinasi_wisata);
+            tvNama = itemView.findViewById(R.id.textview_nama_destinasi_wisata);
+        }
+    }
+}

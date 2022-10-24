@@ -23,9 +23,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Wisata alam"
                 app:boxBackgroundColor="#F9EEFC"
-                app:startIconDrawable="@drawable/ic_sharp_search_24"
                 app:boxStrokeWidth="0dp"
-                app:shapeAppearanceOverlay="@style/Rounded">
+                app:shapeAppearanceOverlay="@style/Rounded"
+                app:startIconDrawable="@drawable/ic_sharp_search_24">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -33,7 +33,11 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_destinasi_wisata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_cardview_destinasi_wisata" />
         </LinearLayout>
 
     </ScrollView>

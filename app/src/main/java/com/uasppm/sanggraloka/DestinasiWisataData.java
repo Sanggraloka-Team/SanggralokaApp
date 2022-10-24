@@ -1,5 +1,7 @@
 package com.uasppm.sanggraloka;
 
+import java.util.ArrayList;
+
 public class DestinasiWisataData {
     private static String[] namaDestinasiWisata = {
             "Floating Market",
@@ -127,4 +129,17 @@ public class DestinasiWisataData {
             R.drawable.img_the_great_asia_africa,
             R.drawable.img_branchsto_ganesha
     };
+
+    static ArrayList<DestinasiWisata> getListData() {
+        ArrayList<DestinasiWisata> list = new ArrayList<>();
+        for (int posisi = 0; posisi < namaDestinasiWisata.length; posisi++) {
+            DestinasiWisata destinasiWisata = new DestinasiWisata();
+            destinasiWisata.setNama(namaDestinasiWisata[posisi]);
+            destinasiWisata.setAlamat(alamatDestinasiWisata[posisi]);
+            destinasiWisata.setDeskripsi(deskripsiDestinasiWisata[posisi]);
+            destinasiWisata.setGambar(imageDestinasiWisata[posisi]);
+            list.add(destinasiWisata);
+        }
+        return list;
+    }
 }

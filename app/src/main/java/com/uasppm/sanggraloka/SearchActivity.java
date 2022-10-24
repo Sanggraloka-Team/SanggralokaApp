@@ -1,15 +1,21 @@
 package com.uasppm.sanggraloka;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
+
 public class SearchActivity extends AppCompatActivity {
+    private RecyclerView rvDestinasiWisata;
+    private ArrayList<DestinasiWisata> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +23,13 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
+
+        rvDestinasiWisata = findViewById(R.id.rv_destinasi_wisata);
+        rvDestinasiWisata.setHasFixedSize(true);
+
+        list.addAll(DestinasiWisataData.getListData());
+
+        showRecycleCardView();
 
         bottomNavigationView.setSelectedItemId(R.id.profil_activity_page);
 
@@ -43,5 +56,11 @@ public class SearchActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void showRecycleCardView() {
+        rvDestinasiWisata.setLayoutManager(new LinearLayoutManager(this));
+        CardViewDestinasiWisataAdapter cardViewDestinasiWisataAdapter = new CardViewDestinasiWisataAdapter(list);
+        rvDestinasiWisata.setAdapter(cardViewDestinasiWisataAdapter);
     }
 }
