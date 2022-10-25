@@ -15,12 +15,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingHorizontal="20dp"
-            android:paddingTop="20dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="65dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/filledTextField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:hint="Wisata alam"
                 app:boxBackgroundColor="#F9EEFC"
                 app:boxStrokeWidth="0dp"
