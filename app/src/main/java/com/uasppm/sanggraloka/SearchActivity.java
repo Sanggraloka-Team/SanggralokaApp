@@ -60,7 +60,7 @@ public class SearchActivity extends AppCompatActivity {
 
     private void showRecycleCardView() {
         rvDestinasiWisata.setLayoutManager(new LinearLayoutManager(this));
-        CardViewDestinasiWisataAdapter cardViewDestinasiWisataAdapter = new CardViewDestinasiWisataAdapter(list);
+        CardViewDestinasiWisataAdapter cardViewDestinasiWisataAdapter = new CardViewDestinasiWisataAdapter(list, this);
         rvDestinasiWisata.setAdapter(cardViewDestinasiWisataAdapter);
     }
 }

@@ -7,7 +7,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
-    private int waktu_splash = 5000;
+    private int waktu_splash = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

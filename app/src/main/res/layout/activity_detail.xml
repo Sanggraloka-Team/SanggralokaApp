@@ -24,7 +24,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="gambar tempat wisata"
                 android:scaleType="centerCrop"
-                android:src="@drawable/img_floating_market" />
+                tools:src="@tools:sample/backgrounds/scenic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,11 +43,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:text="Floating Market"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
                         android:textSize="25sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:text="@string/nama_destinasi_wisata" />
 
                     <Button
                         android:id="@+id/button_add_bookmark"
@@ -65,9 +65,9 @@
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:justificationMode="inter_word"
-                    android:text="Jl. Grand Hotel No.33E, Lembang, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391"
                     android:textColor="#666666"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:text="@string/alamat" />
 
                 <View
                     android:layout_width="match_parent"
@@ -91,9 +91,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:justificationMode="inter_word"
-                    android:text="Tingkatkan pengalaman berbelanja Anda di Floating Market Lembang di mana Anda dapat berbelanja di atas air. Rasakan sensasi unik berbelanja barang-barang seperti makanan lokal di atas perahu yang mengapung di sepanjang danau yang indah menggunakan koin Pasar Terapung yang dibuat khusus untuk pembelian Anda. Selain berbelanja, Floating Market juga menawarkan aktivitas seru lainnya yang bisa dicoba segala usia. \n\nMulai dari batagor, rujak, hingga ronde jahe dan kebab, Anda bisa menemukan berbagai suguhan lezat untuk memuaskan selera Anda. Jelajahi atraksi lain di sekitar pasar, seperti wahana air di danau dan Taman Pelangi dengan spot foto outdoor yang indah. Lebih baik lagi, sewa kostum Kyotoku, lalu berjalan-jalan dengan kimono ini bersama orang yang Anda cintai dan rasakan seolah-olah Anda berada di taman Jepang."
                     android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:text="@string/deskripsi" />
 
                 <TextView
                     android:id="@+id/textview_heading_fasilitas"
