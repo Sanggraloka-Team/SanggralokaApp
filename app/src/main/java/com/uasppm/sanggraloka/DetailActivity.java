@@ -30,7 +30,7 @@ public class DetailActivity extends AppCompatActivity {
     private void getIncomingExtra() {
         if (getIntent().hasExtra("nama_destinasi_wisata") && getIntent().hasExtra("alamat_destinasi_wisata") && getIntent().hasExtra("deskripsi_destinasi_wisata") && getIntent().hasExtra("gambar_destinasi_wisata")) {
             String destinasiWisataNama = getIntent().getStringExtra("nama_destinasi_wisata");
-            String destinasiWisataGambar = getIntent().getStringExtra("gambar_destinasi_wisata");
+            int destinasiWisataGambar = getIntent().getIntExtra("gambar_destinasi_wisata",0);
             String destinasiWisataAlamat = getIntent().getStringExtra("alamat_destinasi_wisata");
             String destinasiWisataDeskripsi = getIntent().getStringExtra("deskripsi_destinasi_wisata");
 
@@ -38,7 +38,7 @@ public class DetailActivity extends AppCompatActivity {
         }
     }
 
-    private void setDataActivity(String destinasiWisataNama, String destinasiWisataGambar, String destinasiWisataAlamat, String destinasiWisataDeskripsi) {
+    private void setDataActivity(String destinasiWisataNama, int destinasiWisataGambar, String destinasiWisataAlamat, String destinasiWisataDeskripsi) {
         namaDestinasiwisata.setText(destinasiWisataNama);
 
 //        Glide.with(this).asBitmap().load(destinasiWisataGambar).into(imageDestinasiWisata);
