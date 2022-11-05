@@ -23,9 +23,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:hint="Wisata alam"
                 app:boxBackgroundColor="#F9EEFC"
                 app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:expandedHintEnabled="false"
+                app:hintEnabled="false"
                 app:shapeAppearanceOverlay="@style/Rounded"
                 app:startIconDrawable="@drawable/ic_sharp_search_24">
 

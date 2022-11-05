@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.ArrayList;
@@ -38,7 +37,7 @@ public class CardViewDestinasiWisataAdapter extends RecyclerView.Adapter<CardVie
     public void onBindViewHolder(@NonNull final CardViewViewHolder holder, int position) {
         DestinasiWisata destinasiWisata = listDestinasiWisata.get(position);
 
-        Glide.with(holder.itemView.getContext()).load(destinasiWisata.getGambar()).apply(new RequestOptions().override(115)).into(holder.gambarDestinasiWisata);
+        Glide.with(holder.itemView.getContext()).load(destinasiWisata.getGambar()).into(holder.gambarDestinasiWisata);
 
         holder.tvNama.setText(destinasiWisata.getNama());
 

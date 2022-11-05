@@ -7,7 +7,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -41,8 +40,8 @@ public class DetailActivity extends AppCompatActivity {
     private void setDataActivity(String destinasiWisataNama, int destinasiWisataGambar, String destinasiWisataAlamat, String destinasiWisataDeskripsi) {
         namaDestinasiwisata.setText(destinasiWisataNama);
 
-//        Glide.with(this).asBitmap().load(destinasiWisataGambar).into(imageDestinasiWisata);
-        Glide.with(this).load(destinasiWisataGambar).apply(new RequestOptions().override(115)).into(imageDestinasiWisata);
+        Glide.with(this).asBitmap().load(destinasiWisataGambar).into(imageDestinasiWisata);
+//        Glide.with(this).load(destinasiWisataGambar).apply(new RequestOptions().override(115)).into(imageDestinasiWisata);
 
         alamatDestinasiWisata.setText(destinasiWisataAlamat);
 
