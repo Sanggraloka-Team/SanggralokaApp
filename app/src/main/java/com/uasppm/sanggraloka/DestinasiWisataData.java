@@ -129,6 +129,41 @@ public class DestinasiWisataData {
             R.drawable.img_the_great_asia_africa,
             R.drawable.img_branchsto_ganesha
     };
+    private static double[] latitude = {
+            -6.81842,
+            -6.8159994,
+            -6.780237302048863,
+            -6.9285129,
+            -6.90475616656358,
+            -6.8126,
+            -6.882042713954262,
+            -6.88890,
+            -6.90631,
+            -6.8348584,
+            -6.8762464,
+            -7.166751992601768,
+            -6.831491781954432,
+            -6.8314726,
+            -6.867384943005398,
+    };
+
+    private static double[] longitude = {
+            107.61812,
+            107.6264600,
+            107.63752863925544,
+            107.6241062,
+            107.62055252391393,
+            107.59745,
+            107.6154855177937,
+            107.59641,
+            107.61482,
+            107.6638952,
+            107.3416489,
+            107.35747002206655,
+            107.65585785274888,
+            107.6030978,
+            107.66542061354258
+    };
 
     static ArrayList<DestinasiWisata> getListData() {
         ArrayList<DestinasiWisata> list = new ArrayList<>();
