@@ -16,6 +16,7 @@ public class DetailActivity extends AppCompatActivity {
     ImageView imageDestinasiWisata;
     TextView namaDestinasiwisata, alamatDestinasiWisata, deskripsiDestinasiWisata;
     FloatingActionButton FAB;
+    double longitude, latitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +29,17 @@ public class DetailActivity extends AppCompatActivity {
         deskripsiDestinasiWisata = findViewById(R.id.textview_isi_deskripsi);
         FAB = findViewById(R.id.floating_action_button_buka_maps);
 
+
+
         FAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                double longitude = getIntent().getDoubleExtra("longitude", 0);
+                double latitude = getIntent().getDoubleExtra("latitude", 0);
                 Intent toMapsActivity = new Intent(DetailActivity.this, MapActivity.class);
+                toMapsActivity.putExtra("longitude", longitude);
+                toMapsActivity.putExtra("latitude", latitude);
+
                 startActivity(toMapsActivity);
             }
         });
@@ -60,14 +68,4 @@ public class DetailActivity extends AppCompatActivity {
 
         deskripsiDestinasiWisata.setText(destinasiWisataDeskripsi);
     }
-
-//    @Override
-//    public void onClick(View v) {
-//        switch (v.getId()) {
-//            case R.id.floating_action_button_buka_maps:
-//                Intent toMapsActivity = new Intent(DetailActivity.this, MapActivity.class);
-//                startActivity(toMapsActivity);
-//                break;
-//        }
-//    }
 }

@@ -173,6 +173,8 @@ public class DestinasiWisataData {
             destinasiWisata.setAlamat(alamatDestinasiWisata[posisi]);
             destinasiWisata.setDeskripsi(deskripsiDestinasiWisata[posisi]);
             destinasiWisata.setGambar(imageDestinasiWisata[posisi]);
+            destinasiWisata.setLatitude(latitude[posisi]);
+            destinasiWisata.setLongitude(longitude[posisi]);
             list.add(destinasiWisata);
         }
         return list;

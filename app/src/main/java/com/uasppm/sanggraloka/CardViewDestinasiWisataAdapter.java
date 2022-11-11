@@ -50,6 +50,8 @@ public class CardViewDestinasiWisataAdapter extends RecyclerView.Adapter<CardVie
                 toDetailActivity.putExtra("gambar_destinasi_wisata", destinasiWisata.getGambar());
                 toDetailActivity.putExtra("alamat_destinasi_wisata", destinasiWisata.getAlamat());
                 toDetailActivity.putExtra("deskripsi_destinasi_wisata", destinasiWisata.getDeskripsi());
+                toDetailActivity.putExtra("latitude", destinasiWisata.getLatitude());
+                toDetailActivity.putExtra("longitude", destinasiWisata.getLongitude());
 
                 context.startActivity(toDetailActivity);
             }

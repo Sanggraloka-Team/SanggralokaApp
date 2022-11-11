@@ -23,6 +23,8 @@ import java.util.ArrayList;
 public class MapActivity extends AppCompatActivity {
 
     private MapView map = null;
+    double longitude;
+    double latitude;
 
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
 
@@ -38,9 +40,9 @@ public class MapActivity extends AppCompatActivity {
         map.setTileSource(TileSourceFactory.MAPNIK);
         map.getController().setZoom(18.0);
 
-        requestPermissionsIfNecessary(new String[]{
-                Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_NETWORK_STATE, Manifest.permission.ACCESS_WIFI_STATE, Manifest.permission.INTERNET
-        });
+        getIncomingExtra();
+
+        requestPermissionsIfNecessary(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_NETWORK_STATE, Manifest.permission.ACCESS_WIFI_STATE, Manifest.permission.INTERNET});
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.ALWAYS);
         map.setMultiTouchControls(true);
 
@@ -49,7 +51,7 @@ public class MapActivity extends AppCompatActivity {
         compassOverlay.enableCompass();
         map.getOverlays().add(compassOverlay);
 
-        GeoPoint point = new GeoPoint(-6.81817, 107.61736);
+        GeoPoint point = new GeoPoint(latitude, longitude);
 
         Marker startMarker = new Marker(map);
         startMarker.setPosition(point);
@@ -68,26 +70,26 @@ public class MapActivity extends AppCompatActivity {
             permissionsToRequest.add(permissions[i]);
         }
         if (permissionsToRequest.size() > 0) {
-            ActivityCompat.requestPermissions(
-                    this,
-                    permissionsToRequest.toArray(new String[0]),
-                    REQUEST_PERMISSIONS_REQUEST_CODE);
+            ActivityCompat.requestPermissions(this, permissionsToRequest.toArray(new String[0]), REQUEST_PERMISSIONS_REQUEST_CODE);
         }
     }
 
     private void requestPermissionsIfNecessary(String[] permissions) {
         ArrayList<String> permissionsToRequest = new ArrayList<>();
         for (String permission : permissions) {
-            if (ContextCompat.checkSelfPermission(this, permission)
-                    != PackageManager.PERMISSION_GRANTED) {
+            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
                 permissionsToRequest.add(permission);
             }
         }
         if (permissionsToRequest.size() > 0) {
-            ActivityCompat.requestPermissions(
-                    this,
-                    permissionsToRequest.toArray(new String[0]),
-                    REQUEST_PERMISSIONS_REQUEST_CODE);
+            ActivityCompat.requestPermissions(this, permissionsToRequest.toArray(new String[0]), REQUEST_PERMISSIONS_REQUEST_CODE);
+        }
+    }
+
+    private void getIncomingExtra() {
+        if (getIntent().hasExtra("longitude") && getIntent().hasExtra("latitude")) {
+            longitude = getIntent().getDoubleExtra("longitude", 0);
+            latitude = getIntent().getDoubleExtra("latitude", 0);
         }
     }
 }
