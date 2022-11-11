@@ -10,5 +10,6 @@
         <item>"Fasilitas 4"</item>
         <item>"Fasilitas 5"</item>
     </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>
