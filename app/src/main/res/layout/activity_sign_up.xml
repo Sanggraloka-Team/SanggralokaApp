@@ -15,7 +15,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:contentDescription="sanggraloka logo"
-        android:src="@drawable/img_sanggraloka" />
+        android:src="@drawable/img_sanggraloka3" />
 
     <LinearLayout
         android:id="@+id/box_sign_up"
