@@ -31,6 +31,7 @@
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
+                android:id="@+id/heading1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -66,6 +67,7 @@
                             app:srcCompat="@drawable/img_floating_market" />
 
                         <TextView
+                            android:id="@+id/tvFloatingMarket"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -99,6 +101,7 @@
                             app:srcCompat="@drawable/img_de_ranch" />
 
                         <TextView
+                            android:id="@+id/tvDeRanch"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -132,6 +135,7 @@
                             app:srcCompat="@drawable/img_orchid_forest_cikole" />
 
                         <TextView
+                            android:id="@+id/tvOrchidForest"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -147,6 +151,7 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/heading2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -181,6 +186,7 @@
                             app:srcCompat="@drawable/img_dapoer_pandan_wangi" />
 
                         <TextView
+                            android:id="@+id/tvDapoerPandan"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -214,6 +220,7 @@
                             app:srcCompat="@drawable/img_burgereens" />
 
                         <TextView
+                            android:id="@+id/tvBurgreens"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -247,6 +254,7 @@
                             app:srcCompat="@drawable/img_sapulidi" />
 
                         <TextView
+                            android:id="@+id/tvSapulidi"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -262,6 +270,7 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/heading3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -296,6 +305,7 @@
                             app:srcCompat="@drawable/img_jalan_dago" />
 
                         <TextView
+                            android:id="@+id/tvJalanDago"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -329,6 +339,7 @@
                             app:srcCompat="@drawable/img_paris_van_java_mall" />
 
                         <TextView
+                            android:id="@+id/tvParisVanJava"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
@@ -362,6 +373,7 @@
                             app:srcCompat="@drawable/img_the_secret" />
 
                         <TextView
+                            android:id="@+id/tvTheSecret"
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"

@@ -1,9 +1,11 @@
 package com.uasppm.sanggraloka;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +15,7 @@ import com.google.android.material.card.MaterialCardView;
 
 public class HomeActivity extends AppCompatActivity {
     MaterialCardView cvFloatingMarket, cvDeRanch, cvOrchidForestCikole, cvDapoerPandanWangi, cvBurgreens, cvSapulidi, cvJalanDago, cvParisVanJava, cvTheSecret;
+    TextView h1, h2, h3, tvFloatingMarket, tvDeRanch, tvOrchidForestCikole, tvDapoerPandanWangi, tvBurgreens, tvSapulidi, tvJalanDago, tvParisVanJava, tvTheSecret;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,34 @@ public class HomeActivity extends AppCompatActivity {
         cvJalanDago = findViewById(R.id.cv_jalan_dago);
         cvParisVanJava = findViewById(R.id.cv_paris_van_java);
         cvTheSecret = findViewById(R.id.cv_the_secret);
+        h1 = findViewById(R.id.heading1);
+        h2 = findViewById(R.id.heading2);
+        h3 = findViewById(R.id.heading3);
+        tvFloatingMarket = findViewById(R.id.tvFloatingMarket);
+        tvDeRanch = findViewById(R.id.tvDeRanch);
+        tvOrchidForestCikole = findViewById(R.id.tvOrchidForest);
+        tvDapoerPandanWangi = findViewById(R.id.tvDapoerPandan);
+        tvBurgreens = findViewById(R.id.tvBurgreens);
+        tvSapulidi = findViewById(R.id.tvSapulidi);
+        tvJalanDago = findViewById(R.id.tvJalanDago);
+        tvParisVanJava = findViewById(R.id.tvSapulidi);
+        tvTheSecret = findViewById(R.id.tvTheSecret);
+
+
+        Typeface signikaFont = Typeface.createFromAsset(getAssets(), "font/Signika-Medium.ttf");
+        h1.setTypeface(signikaFont);
+        h2.setTypeface(signikaFont);
+        h3.setTypeface(signikaFont);
+        tvFloatingMarket.setTypeface(signikaFont);
+        tvDeRanch.setTypeface(signikaFont);
+        tvOrchidForestCikole.setTypeface(signikaFont);
+        tvDapoerPandanWangi.setTypeface(signikaFont);
+        tvBurgreens.setTypeface(signikaFont);
+        tvSapulidi.setTypeface(signikaFont);
+        tvJalanDago.setTypeface(signikaFont);
+        tvParisVanJava.setTypeface(signikaFont);
+        tvTheSecret.setTypeface(signikaFont);
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
 

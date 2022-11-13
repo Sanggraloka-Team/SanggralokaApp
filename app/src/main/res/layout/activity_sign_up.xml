@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="Sudah punya akun?"
+            android:text="Sudah punya akun? Masuk"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="14sp" />
