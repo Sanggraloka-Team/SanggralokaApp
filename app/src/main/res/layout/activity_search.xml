@@ -18,24 +18,33 @@
             android:paddingTop="20dp"
             android:paddingBottom="65dp">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/filledTextField"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                app:boxBackgroundColor="#F9EEFC"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                app:expandedHintEnabled="false"
-                app:hintEnabled="false"
-                app:shapeAppearanceOverlay="@style/Rounded"
-                app:startIconDrawable="@drawable/ic_sharp_search_24">
+                android:layout_marginBottom="15dp"
+                android:text="Daftar Destinasi Wisata"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/filledTextField"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginBottom="20dp"-->
+            <!--                app:boxBackgroundColor="#F9EEFC"-->
+            <!--                app:boxStrokeWidth="0dp"-->
+            <!--                app:boxStrokeWidthFocused="0dp"-->
+            <!--                app:expandedHintEnabled="false"-->
+            <!--                app:hintEnabled="false"-->
+            <!--                app:shapeAppearanceOverlay="@style/Rounded"-->
+            <!--                app:startIconDrawable="@drawable/ic_sharp_search_24">-->
 
-            </com.google.android.material.textfield.TextInputLayout>
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_destinasi_wisata"
