@@ -47,11 +47,6 @@ public class DestinasiWisataData {
             "Konsep tempat wisata keluarga di Bandung ini mengusung konsep Western/Cowboy. Kita bisa bermain atau menunggang kuda, berfoto dengan kostum koboy yang tersedia, mengelilingi area dengan kuda, dan lain sebagainya.\n" +
                     "\n" +
                     "Pastinya, anak-anak bakal senang banget bermain disini. Dengan konsep yang lumayan beda dengan tempat lainnya di Lembang, tentu bisa memberikan suasana segar bagi anda yang berlibur kesini.",
-
-            "Konsep tempat wisata keluarga di Bandung ini mengusung konsep Western/Cowboy. Kita bisa bermain atau menunggang kuda, berfoto dengan kostum koboy yang tersedia, mengelilingi area dengan kuda, dan lain sebagainya.\n" +
-                    "\n" +
-                    "Pastinya, anak-anak bakal senang banget bermain disini. Dengan konsep yang lumayan beda dengan tempat lainnya di Lembang, tentu bisa memberikan suasana segar bagi anda yang berlibur kesini.",
-
             "Orchid Forest Cikole Lembang sudah berdiri sejak Agustus tahun 2017. Tempat ini merupakan taman anggrek terluas di Indonesia. Berada di tengah kawasan hutan lindung dan terbentang seluas 12 hektar. Setidaknya terdapat 157 jenis bunga anggrek beraneka macam dikembangkan di sini.\n" +
                     "\n" +
                     "Orchid Forest Cikole Bandung memfokuskan diri untuk memperkenalkan dan membudidayakan berbagai tanaman anggrek. Menggunakan metode lokal maupun internasional. Spesies Anggreknya tidak hanya berasal dari Indonesia yang memang merupakan negara kedua terbanyak memiliki varian anggrek. Tanaman anggrek di Orchid Forest juga berasal dari negara lain, seperti Venezuela, Argentina, Filipina, Peru, dan Amerika serikat.",

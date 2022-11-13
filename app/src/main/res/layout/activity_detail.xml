@@ -64,7 +64,7 @@
                     android:id="@+id/textview_alamat_tempat_wisata"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:justificationMode="inter_word"
+                    android:textAlignment="viewStart"
                     android:textColor="#666666"
                     android:textSize="12sp"
                     tools:text="@string/alamat" />

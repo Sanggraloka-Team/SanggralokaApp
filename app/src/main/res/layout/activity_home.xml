@@ -113,7 +113,7 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cv_orchid_forestt_cikole"
+                    android:id="@+id/cv_orchid_forest_cikole"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_alignParentEnd="true"

@@ -30,7 +30,6 @@ public class DetailActivity extends AppCompatActivity {
         FAB = findViewById(R.id.floating_action_button_buka_maps);
 
 
-
         FAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +44,7 @@ public class DetailActivity extends AppCompatActivity {
         });
 
         getIncomingExtra();
+        getIncomingExtra2();
 
     }
 
@@ -67,5 +67,18 @@ public class DetailActivity extends AppCompatActivity {
         alamatDestinasiWisata.setText(destinasiWisataAlamat);
 
         deskripsiDestinasiWisata.setText(destinasiWisataDeskripsi);
+    }
+
+    private void getIncomingExtra2() {
+        if (getIntent().hasExtra("nama") && getIntent().hasExtra("alamat") && getIntent().hasExtra("deskripsi") && getIntent().hasExtra("gambar") && getIntent().hasExtra("latitude") && getIntent().hasExtra("longitude")) {
+            String destinasiWisataNama = getIntent().getStringExtra("nama");
+            int destinasiWisataGambar = getIntent().getIntExtra("gambar", 0);
+            String destinasiWisataAlamat = getIntent().getStringExtra("alamat");
+            String destinasiWisataDeskripsi = getIntent().getStringExtra("deskripsi");
+            double latitude = getIntent().getDoubleExtra("latitude", 0);
+            double longitude = getIntent().getDoubleExtra("longitude", 0);
+
+            setDataActivity(destinasiWisataNama, destinasiWisataGambar, destinasiWisataAlamat, destinasiWisataDeskripsi);
+        }
     }
 }
