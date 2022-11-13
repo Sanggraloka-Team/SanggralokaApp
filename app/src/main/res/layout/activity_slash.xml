@@ -15,6 +15,6 @@
         android:layout_height="350dp"
         android:layout_centerInParent="true"
         android:foregroundGravity="center_vertical|center_horizontal"
-        android:src="@drawable/img_sanggraloka3" />
+        android:src="@drawable/img_sanggraloka4" />
 
 </RelativeLayout>
