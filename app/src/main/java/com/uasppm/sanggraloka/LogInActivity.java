@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,11 +38,13 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         btnLogin.setTypeface(signikaFont);
     }
 
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button_log_in:
                 Intent toHomeActivity = new Intent(LogInActivity.this, HomeActivity.class);
+                Toast.makeText(getApplicationContext(), "Berhasil Log In", Toast.LENGTH_SHORT).show();
                 startActivity(toHomeActivity);
                 break;
             case R.id.textview_tidak_punya_akun:

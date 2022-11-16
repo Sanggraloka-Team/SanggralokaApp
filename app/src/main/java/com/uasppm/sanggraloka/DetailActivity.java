@@ -3,8 +3,10 @@ package com.uasppm.sanggraloka;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +18,7 @@ public class DetailActivity extends AppCompatActivity {
     ImageView imageDestinasiWisata;
     TextView namaDestinasiwisata, alamatDestinasiWisata, deskripsiDestinasiWisata;
     FloatingActionButton FAB;
-    double longitude, latitude;
+    Button btnBookmark;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +30,23 @@ public class DetailActivity extends AppCompatActivity {
         alamatDestinasiWisata = findViewById(R.id.textview_alamat_tempat_wisata);
         deskripsiDestinasiWisata = findViewById(R.id.textview_isi_deskripsi);
         FAB = findViewById(R.id.floating_action_button_buka_maps);
+        btnBookmark = findViewById(R.id.button_add_bookmark);
 
+        btnBookmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Destinasi Wisata Tersimpan!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         FAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 double longitude = getIntent().getDoubleExtra("longitude", 0);
                 double latitude = getIntent().getDoubleExtra("latitude", 0);
+
+                Toast.makeText(getApplicationContext(), "Membuka peta...", Toast.LENGTH_SHORT).show();
+
                 Intent toMapsActivity = new Intent(DetailActivity.this, MapActivity.class);
                 toMapsActivity.putExtra("longitude", longitude);
                 toMapsActivity.putExtra("latitude", latitude);

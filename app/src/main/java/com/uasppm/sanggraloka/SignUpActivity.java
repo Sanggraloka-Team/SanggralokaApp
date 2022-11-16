@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,6 +45,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         switch (v.getId()) {
             case R.id.button_sign_up:
                 Intent toHomeActivity = new Intent(SignUpActivity.this, HomeActivity.class);
+                Toast.makeText(getApplicationContext(), "Berhasil Sign Up", Toast.LENGTH_SHORT).show();
                 startActivity(toHomeActivity);
                 break;
             case R.id.textview_sign_up_help:
