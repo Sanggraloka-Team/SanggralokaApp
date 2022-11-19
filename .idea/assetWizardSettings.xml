@@ -37,7 +37,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Acer\Desktop\UAS-PPM\GambarPPM\floating_market.jpg" />
+                                                <entry key="imagePath" value="C:\Users\Acer\Desktop\UAS-PPM\ppm\SanggralokaApp\app\src\main\res\mipmap-hdpi\logo_icon.png" />
                                                 <entry key="opacityPercent" value="60" />
                                               </map>
                                             </option>
@@ -71,7 +71,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Acer\Desktop\UAS-PPM\GambarPPM\floating_market.jpg" />
+                                      <entry key="imageAsset" value="C:\Users\Acer\Desktop\UAS-PPM\ppm\SanggralokaApp\app\src\main\res\mipmap-hdpi\logo_icon.png" />
                                       <entry key="outputName" value="img_floating_market" />
                                     </map>
                                   </option>
@@ -88,6 +88,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
+                                                <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="C:\Users\Acer\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
@@ -100,6 +101,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="C:\Users\Acer\Desktop\UAS-PPM\ppm\SanggralokaApp\app\src\main\res\mipmap-hdpi\img_sanggraloka4.png" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -127,6 +130,12 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="c8a2c8" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -295,11 +304,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

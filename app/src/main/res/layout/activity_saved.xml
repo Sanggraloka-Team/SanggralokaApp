@@ -51,7 +51,7 @@
                         android:src="@drawable/img_de_ranch" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
@@ -59,7 +59,7 @@
                         android:fontFamily="@font/signika_medium"
                         android:text="De Ranch"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <Button
                         style="@style/Widget.MaterialComponents.Button.Icon"
@@ -96,7 +96,7 @@
                         android:src="@drawable/img_orchid_forest_cikole" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
@@ -104,7 +104,7 @@
                         android:fontFamily="@font/signika_medium"
                         android:text="Orchid Forest Cikole"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <Button
                         style="@style/Widget.MaterialComponents.Button.Icon"
@@ -141,7 +141,7 @@
                         android:src="@drawable/img_sanghyang_heuleut" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
@@ -149,7 +149,7 @@
                         android:fontFamily="@font/signika_medium"
                         android:text="Sanghyang Heuleut"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <Button
                         style="@style/Widget.MaterialComponents.Button.Icon"
