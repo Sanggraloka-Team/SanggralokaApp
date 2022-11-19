@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProfileActivity extends AppCompatActivity {
-    Button btnPengaturan, btnEditProfile;
+    Button btnPengaturan, btnEditProfile, btnSignOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class ProfileActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         btnEditProfile = findViewById(R.id.button_edit_profil);
         btnPengaturan = findViewById(R.id.button_pengaturan);
+        btnSignOut = findViewById(R.id.button_sign_out);
 
         bottomNavigationView.setSelectedItemId(R.id.profil_activity_page);
 
@@ -38,6 +39,14 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent toEditProfileActivity = new Intent(ProfileActivity.this, EditProfileActivity.class);
                 startActivity(toEditProfileActivity);
+            }
+        });
+
+        btnSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toLogInActivity = new Intent(ProfileActivity.this, LogInActivity.class);
+                startActivity(toLogInActivity);
             }
         });
 
