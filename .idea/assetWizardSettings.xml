@@ -101,7 +101,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Acer\Desktop\UAS-PPM\ppm\SanggralokaApp\app\src\main\res\mipmap-hdpi\img_sanggraloka4.png" />
+                                                <entry key="imagePath" value="C:\Users\Acer\Desktop\UAS-PPM\ppm\SanggralokaApp\app\src\main\res\drawable\logo_sanggraloka.png" />
+                                                <entry key="scalingPercent" value="82" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -136,6 +137,7 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="c8a2c8" />
+                                      <entry key="outputName" value="ic_new_launcher" />
                                     </map>
                                   </option>
                                 </PersistentState>

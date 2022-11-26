@@ -10,12 +10,12 @@
     <ImageView
         android:id="@+id/imageview_logo"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:contentDescription="sanggraloka logo"
-        android:src="@drawable/img_sanggraloka" />
+        android:src="@drawable/logo_sanggraloka" />
 
     <LinearLayout
         android:id="@+id/box_sign_up"
